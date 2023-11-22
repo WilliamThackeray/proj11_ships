@@ -1,0 +1,16 @@
+@media only screen and (min-width: 35rem) {
+
+  body {
+    display: grid;
+    grid-template-columns: 160px auto;
+  }
+
+  nav {
+    display: block;
+  }
+
+  header, footer {
+    grid-column: 2;
+  }
+
+} /* end media query*/

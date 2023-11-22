@@ -1,0 +1,60 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Star Wars', sans-serif;
+  
+  background-image: url(../images/space.png);
+}
+
+header h1 {
+  color: rgb(228, 169, 255);
+  font-size: 3rem;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: o.5rem;
+}
+nav button {
+  margin: 0.2rem;
+  width: 100%;
+  cursor: pointer;
+  transition: 1s;
+  background-color: rgb(228, 169, 255);
+}
+nav button:hover {
+  transform: scale(1.1);
+  background-color: rgb(202, 169, 255);
+}
+
+main {
+
+}
+main figure {
+  margin: 0;
+  width: 100%;
+}
+main img {
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+main figcaption {
+  color: rgb(202, 169, 255);
+  text-align: center;
+}
+
+footer {
+  color: rgb(202, 169, 255);
+  text-align: center;
+  padding: 2rem;
+}
